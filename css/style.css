@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  color: #c26573;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+a {
+  color: #e4a900;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 3.5em;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+footer {
+  margin-top: 3em;
+  padding-bottom: 2em;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+i {
+  font-size: 50px;
+  margin-right: 25px;
+}
