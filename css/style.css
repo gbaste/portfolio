@@ -48,3 +48,7 @@ i {
   font-size: 50px;
   margin-right: 25px;
 }
+
+p {
+  letter-spacing: 3px;
+}
