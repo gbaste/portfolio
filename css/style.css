@@ -2,6 +2,7 @@ body {
   background-color: black;
   color: #c26573;
   font-family: "Chakra Petch", sans-serif;
+  margin: 3em;
 }
 
 a {
@@ -52,3 +53,20 @@ i {
 p {
   letter-spacing: 3px;
 }
+
+.tooltip { position: relative; }
+
+.tooltip::before {
+  content: var(--c); /* print em-space with class text */
+  display: inline-block;
+  position: absolute; bottom: 500%;
+  background: rgb(0, 0, 0); color: #c26573;; padding: 3px; border-radius: 5px;
+  opacity:0; transition:0.3s; overflow:hidden;
+  max-width: 100%;
+  pointer-events: none;
+  font-size: 12px;
+  padding-right: 10px;
+  width: 100px;
+}
+
+.tooltip:hover::before { opacity:1; bottom: 200%; }
